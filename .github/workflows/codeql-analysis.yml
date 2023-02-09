@@ -18,4 +18,4 @@ on:
 
 jobs:
   analyze:
-    uses: dashi296/pad-array/.github/workflows/codeql-analysis.yml@main
+    uses: dashi296/dashi296/.github/workflows/codeql-analysis.yml@main

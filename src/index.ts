@@ -1,8 +1,8 @@
-export const padStart = <T extends unknown>(
+export const padStart = <T extends unknown, K extends unknown>(
   originalArray: T[],
   length: number,
-  padValue: T
-): T[] => {
+  padValue: K
+): (T | K)[] => {
   const padLength = length - originalArray.length;
   if (padLength <= 0) {
     return originalArray;
@@ -11,11 +11,11 @@ export const padStart = <T extends unknown>(
   return [...padArray, ...originalArray];
 };
 
-export const padEnd = <T extends unknown>(
+export const padEnd = <T extends unknown, K extends unknown>(
   originalArray: T[],
   length: number,
-  padValue: T
-): T[] => {
+  padValue: K
+): (T | K)[] => {
   const padLength = length - originalArray.length;
   if (padLength <= 0) {
     return originalArray;

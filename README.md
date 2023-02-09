@@ -10,7 +10,7 @@ npm install pad-array
 ## Usage
 
 ```ts
-import { padStart, padEnd } from 'my-package-name';
+import { padStart, padEnd } from 'pad-array';
 
 const originalArray = [
   { id: 1, name: 'Bulbasaur' },
